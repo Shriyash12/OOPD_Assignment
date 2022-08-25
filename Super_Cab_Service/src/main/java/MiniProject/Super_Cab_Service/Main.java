@@ -19,7 +19,7 @@ public class Main {
 
 		Rider r1 = null;
 		try {
-			r1 = cabBookingService.registerRider("Srikant", 1, Gender.MALE, l1, l2);
+			r1 = cabBookingService.registerRider("Ananya Pagol", 1, Gender.MALE, l1, l2);
 			System.out.println(r1.getId() + " successfully registered.");
 		} catch (CreateException e) {
 			e.getMessage();
@@ -29,7 +29,7 @@ public class Main {
 		Vehicle v1 = new Vehicle("Swift", 1000, l3);
 		Driver d1 = null;
 		try {
-			d1 = cabBookingService.registerDriver("Raju", 11, Gender.MALE, v1, true);
+			d1 = cabBookingService.registerDriver("Kaju Boka", 11, Gender.MALE, v1, true);
 		} catch (CreateException e) {
 			e.getMessage();
 		}
@@ -38,7 +38,7 @@ public class Main {
 		Vehicle v2 = new Vehicle("Indica", 2000, l4);
 		Driver d2 = null;
 		try {
-			d2 = cabBookingService.registerDriver("Ramu", 12, Gender.MALE, v2, true);
+			d2 = cabBookingService.registerDriver("Ananya Boka", 12, Gender.MALE, v2, true);
 		} catch (CreateException e) {
 			e.getMessage();
 		}
